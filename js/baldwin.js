@@ -38,14 +38,29 @@ var baldwin = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -77.192355, 41.203330//41.203330, -77.192355
+          -77.192355, 41.203330
         ]
       },
       "properties": {
         "title": "William Baldwin",
         "marker-color": "#ff0000",
         "marker-size": "x-small",
-        "description": "John Baldwin was born in 1720 in Pennsylvania, USA"
+        "description": "William Baldwin was born in 1720 in Pennsylvania, USA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.260102, 39.209644//Virginia
+        ]
+      },
+      "properties": {
+        "title": "John Baldwin",
+        "marker-color": "#ff0000",
+        "marker-size": "x-small",
+        "description": "John Baldwin was born in 1746 in Hopeville,Frederick,Virginia, USA"
       }
     },
     {
@@ -67,6 +82,10 @@ var baldwin = {
           [
             -77.192355,
              41.203330
+          ],
+          [
+            -78.260102,
+             39.209644
           ]
         ]
       }
