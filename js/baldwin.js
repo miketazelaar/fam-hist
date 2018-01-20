@@ -35,6 +35,21 @@ var baldwin = {
     },
     {
       "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.192355, 41.203330//41.203330, -77.192355
+        ]
+      },
+      "properties": {
+        "title": "William Baldwin",
+        "marker-color": "#ff0000",
+        "marker-size": "x-small",
+        "description": "John Baldwin was born in 1720 in Pennsylvania, USA"
+      }
+    },
+    {
+      "type": "Feature",
       "properties": {
         "stroke": "#ff0000"
       },
@@ -48,6 +63,10 @@ var baldwin = {
           [
             -79.829674,
             36.089987
+          ],
+          [
+            -77.192355,
+             41.203330
           ]
         ]
       }
