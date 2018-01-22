@@ -2,9 +2,9 @@
 <html>
 <body>
 
-<h1>My First Heading</h1>
+<h1>Map of Baldwin lineage</h1>
 
-<p>My first paragraph.</p>
+<p>The migration from England to America</p>
 
 </body>
 </html>
