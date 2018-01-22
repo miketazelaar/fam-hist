@@ -1,11 +1,42 @@
-
 <html>
+
+<head>
+
+<title>Leaflet Web Map</title>
+
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script src="js/baldwin.js"></script>
+
+</head>
+
 <body>
+  <h1>Map of Baldwin lineage</h1>
 
-<h1>Map of Baldwin lineage</h1>
+  <p>The migration from England to America</p>
 
-<p>The migration from England to America</p>
+    <div id="map" style="width: 600px; height: 400px"></div>
+
+<script>
+var map = L.map('map').setView([53.763225,-2.704405], 8);
+      mapLink =
+          '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+      L.tileLayer(
+          'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; ' + mapLink + ' Contributors',
+          maxZoom: 15,
+          }).addTo(map);
+  function dostuff(feature,layer){layer.bindPopup(
+    "<p>" + feature.properties.title + "</p>" +
+    "<p>" + feature.properties.description + "</p>"
+  )};
+   L.geoJson(baldwin,{
+    onEachFeature : dostuff
+  }).addTo(map);
+
+</script>
 
 </body>
-</html>
 
+</html>
